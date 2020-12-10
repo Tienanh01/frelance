@@ -1,0 +1,61 @@
+// ============================= 4, Graph =======================
+.graph {
+  padding: 72px 36px;
+  &__content {
+    .row {
+      .row-inner {
+        padding-left: 72px;
+        padding-right: 0;
+      }
+      .col-lg-4 {
+        .graph__content-img {
+          position: relative;
+          text-align: center;
+          .img__child {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .graph__content-text {
+          margin-top: 36px;
+          line-height: 1.2;
+          text-align: center;
+          .text-uppercase {
+            color: #303133;
+            font-size: 14px;
+          }
+          .text-lowercase {
+            color: #777777;
+            margin-top: 18px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .pd-4{
+    padding-top: 36px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 992px) {
+  .col-lg-4 {
+    padding-left: 72px;
+  }
+}
+@media (max-width: 991px) and (min-width: 570px) {
+  .col-md-33 {
+    width: 33.33333333%;
+  }
+ 
+}
+@media only screen and (max-width: 991px) {
+  // .col-md-33 {
+  //   padding-left: 36px;
+  // }
+}

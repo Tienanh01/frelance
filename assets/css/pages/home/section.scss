@@ -1,0 +1,44 @@
+// ============================= 5 section ====================
+//
+
+.section {
+  width: 100%;
+  padding: 108px 36px 0px 36px;
+  background: radial-gradient(
+    circle at left top,
+    #0cb4ce 9%,
+    #006cff 48%,
+    #6442ff 91%
+  );
+  background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+  &__content {
+    z-index: 4;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    .section__content-text {
+      padding-bottom: 144px;
+      margin: 0 auto;
+      max-width: 696px;
+      .text__bold {
+        font-size: 35px;
+      }
+      .text__normal {
+        font-size: 24px;
+      }
+    }
+    // .section__content-cans {
+    //   .intestine {
+    //     .intestine__img {
+    //       // top: 56.2%;
+    //       img {
+    //         transform: translateY(21.2%);
+    //         margin: 0 auto;
+    //         width: 100%;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+

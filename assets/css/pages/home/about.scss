@@ -1,0 +1,81 @@
+// ============================= about ================================
+.about {
+  background: #303133;
+  color: #ffffff;
+  &__background {
+    padding: 0 36px 72px 36px;
+    &-detail {
+      // padding-top: 144px;
+      .col-lg-3 {
+        padding: 0;
+        .detail__text {
+          h3 {
+            font-size: 17px;
+            margin-bottom: 36px;
+          }
+
+          color: #ffffff;
+          ul {
+            .detail__text-link {
+              a {
+                font-weight: 500;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 14px;
+              }
+              a:hover {
+                color: #e9168c;
+              }
+            }
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .pd-10 {
+        padding-left: 36px;
+      }
+    }
+    .uncont {
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        padding: 0 9px;
+      }
+      i {
+        font-size: 31px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) and (min-width: 570px) {
+  .col-md-25 {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .about__background {
+    padding: 0 0px 72px 0px;
+  }
+}
+@media only screen and (max-width: 569px) {
+  .about__background {
+    text-align: center;
+  }
+  .about__background .icon__box {
+    position: relative;
+    padding-top: 36px;
+  }
+  .about__background .uncont {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about__background .uncont {
+    flex-wrap: nowrap;
+  }
+  .about__background .uncont i {
+    font-size: 25px;
+  }
+}

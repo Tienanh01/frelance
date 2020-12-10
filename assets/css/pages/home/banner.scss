@@ -1,0 +1,100 @@
+/* ====================== 3, Banner ====================== */
+.banner {
+  font-family: "Quicksand", sans-serif;
+  color: #ffffff;
+  background: radial-gradient(
+    circle at left top,
+    rgb(12, 180, 206) 9%,
+    rgb(0, 108, 255) 48%,
+    rgb(100, 66, 255) 91%
+  );
+  background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+  &__content {
+    padding: 144px 0;
+    .row {
+      .col-lg-6 {
+        // padding-left: 72px;
+        .banner__content-text {
+          // padding-left: 36px;
+          color: #ffffff;
+          .text__big {
+            font-size: 46px;
+            padding: 15px 0;
+            font-weight: 700;
+          }
+          &__title {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 15px 0;
+          }
+          h4 {
+            font-size: 14px;
+            font-weight: 300;
+            padding: 15px 0;
+          }
+          p {
+            font-size: 24px;
+            padding-bottom: 23px;
+          }
+          .banner__content-button {
+            margin-top: 36px;
+            a {
+              text-decoration: none;
+              font-weight: 500;
+              padding: 14px 40px;
+              border: 1px solid #ffffff;
+              border-radius: 10em;
+              background-color: #ffffff;
+              color: #303133;
+            }
+            a:hover {
+              background: radial-gradient(
+                circle at left top,
+                rgb(12, 180, 206) 9%,
+                rgb(0, 108, 255) 48%,
+                rgb(100, 66, 255) 91%
+              );
+              background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner__content .row .col-lg-6 .banner__content-text .text__big {
+    font-size: 33px;
+  }
+  .banner__content .row .col-lg-6 .banner__content-text {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 569px) {
+  .banner__content {
+    padding-bottom: 108px;
+  }
+  .order1 {
+    text-align: center;
+    order: 2;
+  }
+  .order2 {
+    img {
+      order: 1;
+    }
+  }
+  .banner__content .row .col-lg-6 .banner__content-text .text__big {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 959px) and (min-width: 570px) {
+  .col-md-50 {
+    width: 50%;
+  }
+}

@@ -1,0 +1,64 @@
+// ========================= author ================================
+
+.author {
+  background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+  background-color: #f7f7f7;
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 37px;
+  }
+  .author__information-detail {
+    // padding: 144px 0;
+    padding-top: 144px;
+    text-align: center;
+    color: #f7f7f7;
+    .detail__img {
+      background-color: #f7f7f7;
+      position: relative;
+      .detail__img-ceo {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        margin-bottom: 18px;
+        transform: translateX(-36px);
+        img {
+          max-width: 72px;
+          min-height: 72px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .detail__text {
+      padding-top: 144px;
+      font-size: 14px;
+      &-bold {
+        text-align: center;
+        font-size: 29px;
+        line-height: 1.75em;
+        font-weight: 300;
+      }
+      h6 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 27px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .empty-box {
+    padding-top: 108px;
+  }
+  padding-bottom: 72px;
+}
+@media only screen and (max-width: 569px) {
+  .author .author__information-detail .detail__text-bold {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+.author .author__information-detail h4{
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 27px;
+}
+}

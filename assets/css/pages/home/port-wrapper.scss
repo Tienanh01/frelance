@@ -1,0 +1,112 @@
+// ================================== port-wrapper=========================
+.port-wrapper {
+  background-color: #f7f7f7;
+  // img {
+  //   padding-left: 72px;
+  // }
+  &__content {
+    padding: 72px 36px;
+
+    &-text {
+      padding: 12% 0px 12% 0;
+      font-weight: 500;
+      .text__first {
+        font-size: 14px;
+        font-weight: 500;
+        color: #e91680;
+      }
+      .text__big {
+        color: #303133;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 2.7rem;
+      }
+      .text__end {
+        color: #777;
+
+        font-size: 15px;
+        text-align: left;
+        margin-top: 18px;
+        padding-bottom: 36px;
+      }
+    }
+    &-line {
+      .line__Progress {
+        @include flex-between;
+        font-weight: 500;
+      }
+      .line__white {
+        .line__pink {
+          position: relative;
+          margin: 5px 0 0 0;
+          padding: 2px 9px 2px 9px;
+          border-radius: 10px;
+          background-clip: padding-box;
+          background-color: rgba(119, 119, 119, 0.1);
+          .vc_bar {
+            display: block;
+            position: absolute;
+            height: 100%;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.025);
+            /* width: 0%; */
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            background-clip: padding-box;
+            transition: all 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            widows: 80%;
+            background-color: #e91680;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 569px) {
+  .port-wrapper {
+    background-color: #f7f7f7;
+    // img {
+    //   padding-left: 72px;
+    // }
+    &__content {
+      padding: 72px 36px;
+      .order1 {
+        text-align: center;
+        order: 2;
+      }
+      .order2 {
+        img {
+          order: 1;
+        }
+      }
+      &-text {
+        padding: 12% 0px 12% 0;
+        font-weight: 500;
+        .text__first {
+          font-size: 14px;
+          font-weight: 500;
+          color: #e91680;
+          text-align: center;
+        }
+        .text__big {
+          color: #303133;
+          font-size: 35px;
+          font-weight: 500;
+          line-height: 2.7rem;
+          text-align: center;
+        }
+        .text__end {
+          color: #777;
+
+          font-size: 15px;
+          text-align: center;
+          margin-top: 18px;
+          padding-bottom: 36px;
+        }
+      }
+    }
+  }
+  .pd-8 {
+    padding-bottom: 36px;
+  }
+}

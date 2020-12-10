@@ -1,0 +1,33 @@
+// =============================== footer =========================
+.footer {
+  padding: 36px;
+  background-color: #141618;
+
+  &__content {
+    color: white;
+    @include flex-between;
+    display: flex;
+    & > ul {
+      display: flex;
+      .footer__content-icon {
+        .icon-link:hover {
+          color: #e9168c;
+        }
+      }
+      .icon-link {
+        padding: 0 9px;
+        color: white;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px){
+  .footer__content{
+    display: block;
+    text-align: center;
+  }
+  .footer__content .box-center{
+    justify-content: center;
+    padding-top: 36px;
+  }
+}
